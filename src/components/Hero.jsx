@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import Btc from '../images/hero/bitcoin.png'
-import Eth from '../images/hero/ethereum.png'
+import Btc from '../images/bitcoin.png'
+import Eth from '../images/ethereum.png'
 import { Link } from 'react-router-dom'
 import { FaChevronDown } from 'react-icons/fa6'
 

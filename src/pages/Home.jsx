@@ -1,8 +1,12 @@
 import React from 'react'
-import {} from '../components'
+import { Hero } from '../components'
 
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <div className='home'>
+      <Hero />
+    </div>
+  )
 }
 
 export default Home

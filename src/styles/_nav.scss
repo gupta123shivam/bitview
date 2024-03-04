@@ -1,4 +1,4 @@
-@use '../global/' as *;
+@use './global' as *;
 
 nav {
   font-family: $big-font;
@@ -72,14 +72,14 @@ nav {
       }
     }
   }
-}
 
-.hamburger-menu {
-  display: none;
-  font-size: 2.7rem;
+  .hamburger-menu {
+    display: none;
+    font-size: 2.7rem;
 
-  @media (max-width: 800px) {
-    display: flex !important;
+    @media (max-width: 800px) {
+      display: flex !important;
+    }
   }
 }
 

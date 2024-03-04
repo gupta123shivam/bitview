@@ -64,7 +64,7 @@ function Navbar() {
         <RxCross2 onClick={toggleMobileMenu} className='close-mobile' />
         <ul>
           <li onClick={toggleMobileMenu}>
-            <a href='#home'>Home</a>
+            <a href='#hero'>Home</a>
           </li>
           <li onClick={toggleMobileMenu}>
             <a href='#market'>Market</a>

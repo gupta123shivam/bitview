@@ -41,7 +41,7 @@ function Hero() {
           <div className='hero-content__text'>
             <img className='btc-float' src={Btc} alt='floating-el' />
             <h1>
-              Track and Trade
+              Track Trade
               <br /> <span>Crypto currencies</span>
             </h1>
             <img className='eth-float' src={Eth} alt='floating-el' />

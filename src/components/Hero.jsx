@@ -3,6 +3,7 @@ import Btc from '../images/bitcoin.png'
 import Eth from '../images/ethereum.png'
 import { Link } from 'react-router-dom'
 import { FaChevronDown } from 'react-icons/fa6'
+import mockData from '../mock/_market.json'
 
 function Hero() {
   const [data, setData] = useState([])
@@ -25,8 +26,10 @@ function Hero() {
         const jsonData = await response.json()
         setData(jsonData)
       } catch (error) {
+        setData(mockData)
         console.error(error)
-      } finally {
+      } finally { 
+        setCoinsLoad(false)
       }
     }
 
@@ -53,9 +56,9 @@ function Hero() {
           </a>
 
           {/* Crypto coins */}
-          <div onLoad={() => setCoinsLoad(false)} className='coin-slider'>
+          <div className='coin-slider'>
             {coinsLoad && <span className='loader'></span>}
-            {data.map((item) => (
+            {data.slice(0, 4).map((item) => (
               <Link
                 to={`/coin/${item.id}`}
                 key={item.id}

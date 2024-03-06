@@ -54,7 +54,7 @@ function Market() {
               <div className='market-content__coin-list__top'>
                 <p>Coin</p>
                 <p>Price</p>
-                <p>24h Change</p>
+                <p className='hide'>24h Change</p>
                 <p>Market Cap</p>
               </div>
               <div className='market-content__coin-list__row'>
@@ -72,7 +72,7 @@ function Market() {
                     <p>{'$ ' + item.current_price.toFixed(2)}</p>
                     <p
                       className={
-                        'slider-coin__price ' +
+                        'hide slider-coin__price ' +
                         (item.price_change_percentage_24h >= 0
                           ? 'green-text'
                           : 'red-text')

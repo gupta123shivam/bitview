@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import mockCoin from '../mock/_coin.json'
 
 function Coin() {
   const { coinId } = useParams()
@@ -19,7 +20,10 @@ function Coin() {
         setCoin(json)
       } catch (error) {
         console.error(error)
-      } 
+      } finally {
+        setCoin(mockCoin)
+        setLoadCoin(false)
+      }
     }
 
     fetchData()

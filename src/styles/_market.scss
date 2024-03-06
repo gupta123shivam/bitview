@@ -30,11 +30,11 @@
     &__top {
       display: grid;
       grid-template-columns: 16fr 25fr 25fr 25fr;
-      color: $color-white;
+      color: $color-dark;
       font-size: $h4-size;
       padding: 1.5rem;
       text-align: right;
-      font-weight: 500;
+      font-weight: 600;
       background: $color-blue-purp;
       border-radius: 8px 8px 0 0;
       gap: 2rem;
@@ -85,7 +85,7 @@
 
   .activePagi {
     background: $color-blue-purp;
-    color: $color-white;
+    color: $color-dark;
   }
 
   .coin-row {
